@@ -110,28 +110,27 @@
         <span>kelecsenyibalazs99 @ gmail.com</span>
         <span><a href="https://www.linkedin.com/in/bal%C3%A1zs-kelecs%C3%A9nyi-16746a168/" target="_blank"> LinkedIn profil</a></span>
       </div> 
-    </footer>     
+    </footer> 
+    <script>
+
+      window.addEventListener('scroll', reveal);
+      function reveal(){
+  
+          var revealleft = document.querySelectorAll('.revealleft');
+          var revealright = document.querySelectorAll('.revealright');
+          var windowheight = window.innerHeight;
+          var revealtop = revealleft[0].getBoundingClientRect().top;
+          var revealpoint = 150;
+  
+          if(revealtop < windowheight - revealpoint){
+              revealleft[0].classList.add('active');
+              revealright[0].classList.add('active');
+          }
+          else{
+              revealleft[0].classList.remove('active');
+              revealright[0].classList.remove('active');
+          }
+      }
+    </script>    
   </body>
-  <script type="text/javascript">
-
-    window.addEventListener('scroll', reveal);
-    function reveal(){
-
-        var revealleft = document.querySelectorAll('.revealleft');
-        var revealright = document.querySelectorAll('.revealright');
-        var windowheight = window.innerHeight;
-        var revealtop = revealleft[0].getBoundingClientRect().top;
-        var revealpoint = 150;
-
-        if(revealtop < windowheight - revealpoint){
-            revealleft[0].classList.add('active');
-            revealright[0].classList.add('active');
-        }
-        else{
-            revealleft[0].classList.remove('active');
-            revealright[0].classList.remove('active');
-        }
-    }
-
-  </script>
 </html>
