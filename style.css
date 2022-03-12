@@ -247,6 +247,30 @@ section{
 /*-- section welcome end --*/
 
 /*-- section aboutme --*/
+.revealleft{
+    position: relative;
+    transform: translateX(-350px);
+    opacity: 0;
+    transition:  all 3s ease;
+}
+
+.revealleft.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.revealright{
+    position: relative;
+    transform: translateX(350px);
+    opacity: 0;
+    transition:  all 3s ease;
+}
+
+.revealright.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+
 .aboutme{
     background-color: var(--white);
     color: var(--background);
@@ -311,6 +335,12 @@ section:nth-child(3){
     flex-flow: column;
     flex-basis: 25%;
     margin: 1rem 1rem;
+    transition: transform .3s;
+}
+
+.skills .text .container .col:hover{
+    transform: translateY(-20px);
+    transition: transform .3s;
 }
 
 .skills .text .container .col img{

@@ -47,8 +47,8 @@
 
         <section class="aboutme" id="rólam">
           <div class="text">
-            <h2>Kelecsényi Balázs vagyok, mérnökinformatikus.</h2>
-            <p>Tanulmányaimat a Dunaújvárosi Egytemen végeztem-el BSC szinten.
+            <h2 class="revealleft">Kelecsényi Balázs vagyok, mérnökinformatikus.</h2>
+            <p class="revealright">Tanulmányaimat a Dunaújvárosi Egytemen végeztem-el BSC szinten.
                Egyetem során szoftvertechnológia specializáción voltam hallgató. Tanulmányaim során voltak kisebb-nagyobb projekteim, de azok 
                szerintem nem tekinthetőek relevánsnak a munka világában. Jelenleg a frontend fejlesztést tanulom önfejlesztés formájában. Épp ezért készítem ezt az oldalt, 
                ahova az önfejlődésem folyamatának eredményeit helyezem el. 
@@ -112,4 +112,26 @@
       </div> 
     </footer>     
   </body>
+  <script type="text/javascript">
+
+    window.addEventListener('scroll', reveal);
+    function reveal(){
+
+        var revealleft = document.querySelectorAll('.revealleft');
+        var revealright = document.querySelectorAll('.revealright');
+        var windowheight = window.innerHeight;
+        var revealtop = revealleft[0].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+            revealleft[0].classList.add('active');
+            revealright[0].classList.add('active');
+        }
+        else{
+            revealleft[0].classList.remove('active');
+            revealright[0].classList.remove('active');
+        }
+    }
+
+  </script>
 </html>
