@@ -21,6 +21,10 @@ Author URI: --
     --orange:#FE7A00;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body { 
     font-family: 'Roboto', sans-serif; 
     position: relative;
