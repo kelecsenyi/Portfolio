@@ -177,6 +177,7 @@ section{
     justify-content: center;
     flex-flow: column;
     max-width: 1150px;
+    overflow-x: hidden;
 }
 
 .welcome .text h1{
@@ -344,8 +345,8 @@ section:nth-child(3){
 }
 
 .skills .text .container .col img{
-    width: 200px;
-    height: 240px; 
+    width: 180px;
+    height: 220px; 
 }
 
 .skills .text .container .col h4{
