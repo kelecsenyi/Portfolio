@@ -2,7 +2,7 @@
 Theme Name: Kelecsényi Balázs website
 Theme URI: --
 Description: Responsive webdesign
-Version: 1
+Version: 1.2
 Author: Kelecsényi Balázs
 Author URI: --
 */
@@ -81,35 +81,59 @@ nav {
     transition: all .3s;
 }
 
-nav label { 
-    display: none 
+.menu-btn{
+    display: none;
 }
 
-#menu-toggle { 
-    display: none 
+.menu-btn-burger{
+    width: 40px;
+    height: 5px;
+    background-color: var(--white);
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn-burger::before,
+.menu-btn-burger::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    background-color: var(--white);
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn-burger::before{
+    transform: translateY(-14px);
+}
+.menu-btn-burger::after{
+    transform: translateY(14px);
 }
 
 @media (max-width: 650px) {
-	nav label { 
-        display: block; 
-        cursor: pointer 
+    .menu-btn{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 70px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
     }
 
-	nav label span { 
-        display: block; 
-        width: 32px; 
-        height: 4px; 
-        background: white; 
-        border-radius: 2px; 
-        transition: transform .3s; 
+    .menu-btn.open .menu-btn-burger{
+        transform: translateX(-50px);
+        background: transparent;
     }
-	nav label span:nth-child(2) { 
-        margin: 6px 0 
-    }
-
-	#menu-toggle:checked + label span:nth-child(1) { transform: rotate(45deg) }
-	#menu-toggle:checked + label span:nth-child(2) { display: none }
-	#menu-toggle:checked + label span:nth-child(3) { transform: rotate(-45deg);  margin-top: -4px}
+	.menu-btn.open .menu-btn-burger::before { transform: rotate(45deg) translate(35px, -35px); }
+	.menu-btn.open .menu-btn-burger::after { transform: rotate(-45deg) translate(35px, 35px); }
+    
+    .menu-btn.open ~ .menu { 
+        transform: scaleY(1);
+        opacity: 1;
+        }
 
 	.menu { 
         background: var(--orange);
@@ -131,11 +155,6 @@ nav label {
         text-align: center;
         border-bottom: 1px solid var(--white);
     }
-
-	#menu-toggle:checked ~ .menu { 
-        transform: scaleY(1);
-        opacity: 1;
-        }
 
 	.menu a { 
         margin: 0;
@@ -208,7 +227,15 @@ section{
     margin-bottom: 2rem;
     height: 150px;
     width: 90px;
+    animation: animatedArrow 2s ease -2s infinite forwards;
 }
+
+@keyframes animatedArrow{
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-2rem);}
+    100% {transform:translateY(0);}
+}
+
 
 .welcome .text a{
     text-decoration: none;
@@ -243,6 +270,11 @@ section{
         margin-bottom: 1rem;
         height: 130px;
         width: 90px;
+    }
+    @keyframes animatedArrow{
+        0% {transform: translateY(0);}
+        50% {transform: translateY(-1rem);}
+        100% {transform:translateY(0);}
     }
 }
 /*-- section welcome end --*/
