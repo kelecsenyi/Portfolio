@@ -29,6 +29,8 @@ body {
     font-family: 'Roboto', sans-serif; 
     position: relative;
     background: rgba(204, 204, 204, 0.3);
+    position: relative;
+    min-height: 100vh;
 }
 
 
@@ -458,6 +460,13 @@ section:nth-child(3){
 }
 
 @media (max-width:998px){
+    .workwithme .elements ul li{
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
+    .workwithme{
+        min-height: 100vh;
+    }
     .workwithme .elements ul{
         margin: 0 1.5rem;
     }
@@ -468,15 +477,13 @@ section:nth-child(3){
 /*-- section workwithme end --*/
 
 /*---references---*/
-
-
 .flexbox-container{
     max-width: 1150px;
     margin: 0 auto;
     padding: 0 1rem;
 }
 
-.flexbox-container h2{
+.flexbox-container h1{
     margin: 1.5rem 1rem;
     font-weight: bold;
     font-size: 26px;
@@ -561,11 +568,50 @@ img {
         flex-basis: 100%;
     }
 }
+.flexbox-container .cards{
+    min-height: 82.5vh;
+}
+
+/*---references end---*/
+
+/*ADATVÉDELEM*/
+.flexbox-container .texts{
+    min-height: 82.5vh;
+}
+.flexbox-container .texts ul{
+    margin: 4rem 0 1rem 1rem;
+}
+.flexbox-container .texts ul li{
+    margin: 1rem 0;
+}
+.flexbox-container .texts ul li,
+.flexbox-container .texts p{
+    font-size: 1.1rem;
+}
+
+.flexbox-container .texts h2{
+    background-color: var(--orange);
+    color: var(--white);
+    border-radius: 6px;
+    padding: 8px 15px;
+    margin: 50px 0 20px 0;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.flexbox-container .texts p{
+    line-height: 1.7;
+    margin: 0 0 20px 0;
+}
+/*ADATVÉDELEM END*/
 
 /*MAIN END*/
 
 /*FOOTER*/
 footer{
+    /*position: absolute;
+    bottom: 0;*/
+    width: 100%;
     height: 70px;
     background: var(--background);
 }
@@ -576,6 +622,7 @@ footer{
     margin: 0 auto;
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: space-between;
     flex-flow: row wrap;
     color:var(--white);
@@ -583,7 +630,7 @@ footer{
 
 .flexbox span{
     color: var(--white);
-    margin: 0 1rem;
+    margin: .2rem 1rem;
 }
 
 .flexbox span a{
@@ -591,7 +638,16 @@ footer{
     color: var(--white);
 }
 
+.flexbox span a:hover{
+    border-bottom: 2px solid var(--orange);
+}
+
 @media (max-width:675px){
+    footer{
+        padding-top: 1rem;
+        padding-bottom: .3rem;
+        height: auto;
+    }
     .flexbox{
         align-items: center;
         justify-content: space-evenly;

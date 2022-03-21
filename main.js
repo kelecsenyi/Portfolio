@@ -37,3 +37,7 @@ window.addEventListener('scroll', reveal);
             revealright[0].classList.remove('active');
         }
     };
+
+var date = new Date();
+var year = date.getFullYear();
+document.getElementById('year').textContent = year;
