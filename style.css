@@ -579,7 +579,7 @@ img {
     min-height: 82.5vh;
 }
 .flexbox-container .texts ul{
-    margin: 4rem 0 1rem 1rem;
+    margin: 1rem 0 1rem 1rem;
 }
 .flexbox-container .texts ul li{
     margin: 1rem 0;
@@ -594,14 +594,14 @@ img {
     color: var(--white);
     border-radius: 6px;
     padding: 8px 15px;
-    margin: 50px 0 20px 0;
+    margin: 30px 0 20px 0;
     font-weight: 500;
     display: inline-block;
 }
 
 .flexbox-container .texts p{
     line-height: 1.7;
-    margin: 0 0 20px 0;
+    margin: 0 0 25px 0;
 }
 /*ADATVÉDELEM END*/
 
