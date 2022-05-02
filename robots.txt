@@ -1,3 +1,0 @@
-user-agent: *
-Disallow: /main.js
-Disallow: /robots.txt
