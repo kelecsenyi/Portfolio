@@ -1,0 +1,108 @@
+.imgs{
+    height: 50vh;
+    width: 50vh;
+    border-radius: 100%;
+    position: relative;
+  }
+  
+  .rotate {
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 10vh;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .rotate div {
+    height: 7vh;
+    width: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #a {
+    transform-origin: 5vh 0;
+    transform: rotate(120deg);
+    animation: roundcircle 8s infinite  linear;
+  }
+  
+  #a  div {
+    animation: roundcirclediv 8s infinite linear;
+  }
+  
+  #b {
+    transform-origin: 5vh 0;
+    transform: rotate(90deg);
+    animation: roundcircle 8s -2s infinite linear;
+  }
+  
+  #b div {
+    transform: rotate(-90deg);
+    animation: roundcirclediv 8s -2s infinite  linear;
+  }
+  
+  #c {
+    transform-origin: 5vh 0;
+    transform: rotate(60deg);
+    animation: roundcircle 8s -3s infinite  linear;
+  }
+  
+  #c div {
+    transform: rotate(-60deg);
+    animation: roundcirclediv 8s -3s infinite  linear;
+  }
+  
+  #d {
+    transform-origin: 5vh 0;
+    transform: rotate(30deg);
+    animation: roundcircle 8s -4s infinite  linear;
+  }
+  
+  #d div {
+    transform: rotate(-30deg);
+    animation: roundcirclediv 8s -4s infinite  linear;
+  }
+  
+  #e {
+    transform-origin: 5vh 0;
+    transform: rotate(0deg);
+    animation: roundcircle 8s -6s infinite  linear;
+  }
+  
+  #e div {
+    transform: rotate(-0deg);
+    animation: roundcirclediv 8s -6s infinite  linear;
+  }
+
+  #f {
+    transform-origin: 5vh 0;
+    transform: rotate(0deg);
+    animation: roundcircle 8s -7s infinite  linear;
+  }
+  
+  #f div {
+    transform: rotate(-0deg);
+    animation: roundcirclediv 8s -7s infinite  linear;
+  }
+  
+  @keyframes roundcircle {
+    0% {
+      transform: rotate( 0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes roundcirclediv {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
