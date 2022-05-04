@@ -94,9 +94,20 @@ section{
     position: relative;
 }
 
+.height-10{
+    height: 100vh;
+}
+
+.height-8{
+    height: 80vh;
+}
+
+svg{
+    display: block;
+}
+
 .container{
     max-width: 1080px;
-    height: 100vh;
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -107,12 +118,28 @@ section{
     align-items: flex-start;
 }
 
+.flex_row-2{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3vw;
+}
+
+.flex{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    gap: 10vw;
+}
+
 .title{
     font-weight: 500;
     font-size: 36px;
     line-height: 54px;
     text-align: center;
-    margin-bottom: 8vh;
+    margin-bottom: 12vh;
 }
 
 .text{
@@ -154,7 +181,7 @@ section{
     line-height: 70px;
 }
 
-.col h3{
+.col h2{
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
@@ -185,15 +212,75 @@ section{
     margin-top: 12vh;
 }
 
-.container svg{
-    position:absolute;
-    left: 0px;
-    width: 100%;
+/*========= THIRD SECTION ==========*/
+.sub-title{
+    background: linear-gradient(90.83deg, var(--primaryfirst) 0%, var(--primarysecond) 100%);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    width: 360px;
     text-align: center;
-    z-index: -1;
+    margin-bottom: 3vh;
 }
 
-/*========= THIRD SECTION ==========*/
+.flex ul li{
+    display: block;
+    margin: .5rem 1rem;
+}
+
+.flex ul li h4{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.flex ul li meter{
+    width: 328px; 
+}
+
+meter::-webkit-meter-optimum-value {
+    background: #004FC7;
+}
+
+/*========= FOURTH SECTION ==========*/
+.background{
+    min-width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+}
+
+.photo{
+    width: 320px;
+    height: auto;
+}
+
+.flex_row-2 .text{
+    align-self: flex-start;
+}
+
+.flex_row-2 .text p{
+    margin-bottom: 2rem;
+}
 
 
 /*========= FOOTER ==========*/
+footer{
+    background-color: #a2d9ff;
+    width: 100%;
+}
+footer svg{
+    z-index: -1;
+}
+
+footer .container{
+    padding: 1rem;
+    text-align: center;
+
+}
+
+footer .container.elements{
+    display: flex;
+}
