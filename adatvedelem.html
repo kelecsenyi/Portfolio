@@ -13,55 +13,65 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <!--Icon-->
+    <link rel="stylesheet" href="FontAwesome/css/all.css">
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rotate.css">
+    <link rel="stylesheet" href="css/media.css">
   </head>
   <body>
 
-    <nav>
-      <div class="w">
-        <h1 class="logo">Kelecsényi Balázs - Mérnökinformatikus</h1>
-
-        <div class="menu-btn">
-          <div class="menu-btn-burger"></div>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html"><img src="pics/logo.png" alt="Kelecsényi Balázs logo"></a>
         </div>
-        
-        <ul class="menu">
-            <li ><a href="index.html">Rólam</a></li>
-            <li ><a href="references.html">Referenciák</a></li>
+        <ul>
+          <li class="circle arrow hastooltip"><a href="index.html"><i class="fa-solid fa-arrow-left"></i></a><span class="tooltiptext">Főoldal</span></li>
+          <li class="circle"><a href="https://github.com/kelecsenyi" target="_blank"><img src="pics/github@3x.png" alt="Kelecsényi Balázs Github Link"></a></li>
+          <li class="circle"><a href="https://www.linkedin.com/in/bal%C3%A1zs-kelecs%C3%A9nyi-16746a168/" target="_blank"><img src="pics/linkedin@3x.png" alt="Kelecsényi Balázs LinkedIn Link"></a></li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
     <main>
         <div class="flexbox-container">
             <div class="texts">
-                <h1>Adatvédelmi nyilatkozat</h1>
-                <h2>Üzemeltető adatai</h2>
-                <ul>
-                    <li>... weboldal üzemben tartója és a személyes adatok kezelője:<b> Kelecsényi Balázs</b></li>
-                    <li>Végzettség:<b> Mérnökinformatikus BSC</b></li>
-                    <li>E-mail cím:<b> kelecsenyibalazs99 [kukac] gmail.com</b></li>
-                    <li>Honlap tárhelyét biztosító szolgáltató:<b> </b></li>
-                    <li>Tárhelyszolgáltató címe:<b> </b></li>
-                    <li>Tárhely szolgáltató adószáma:<b> </b></li>
-                </ul>
-                <h2>Sütik / cookie policy</h2>
-                <p><b>A ... weboldal</b> semmilyen sütit/cookie-t nem használ a működéshez és <b>semmilyen adatot nem gyűjt a látogatóról.</b></p>
-                <h2>Kapcsolatfelvétel / kapcsolattartás</h2>
-                <p>Az e-mailben történő kapcsolatfelvétel esetén az <b>adatokat</b> (nevet és email címet) <b>csak arra</b> a célra <b>használom fel, hogy válaszoljak a levélre, illetve csak addig kerülnek tárolásra ameddig feltétlenül szükségesek.</b></p>
-                <p>Ezen kívül, <b>semmilyen más célra nem kerülnek felhasználásra és nem kerülnek továbbításra harmadik félnek.</b></p>
+                
             </div>
         </div>
+        <section id="adatvedelem">
+          <div class="container height-5">
+            <h1 class="title">Adatvédelmi nyilatkozat</h1>
+            <div class="flex_column_2">
+              <h2>Sütik / cookie policy</h2>
+              <p><b>A ... weboldal</b> semmilyen sütit/cookie-t nem használ a működéshez és <b>semmilyen adatot nem gyűjt a látogatóról.</b></p>
+              <h2>Kapcsolatfelvétel / kapcsolattartás</h2>
+              <p>Az e-mailben történő kapcsolatfelvétel esetén az <b>adatokat</b> (nevet és email címet) <b>csak arra</b> a célra <b>használom fel, hogy válaszoljak a levélre, illetve csak addig kerülnek tárolásra ameddig feltétlenül szükségesek.</b></p>
+              <p>Ezen kívül, <b>semmilyen más célra nem kerülnek felhasználásra és nem kerülnek továbbításra harmadik félnek.</b></p>
+            </div>
+          </div>
+        </section>
       </main>
 
-    <footer>
-      <div class="flexbox">
-        <span><a href="adatvedelem.html">Adatvédelmi nyilatkozat</a></span>
-        <span> Kelecsényi Balázs &copy; Minden jog fenntartva <spa id="year"></spa></span>
-        <span><a href="https://www.linkedin.com/in/bal%C3%A1zs-kelecs%C3%A9nyi-16746a168/" target="_blank"> LinkedIn profil</a></span>
-      </div> 
-    </footer> 
+      <footer>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -50 1440 319"><path fill="#a2d9ff" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,170.7C384,160,480,160,576,138.7C672,117,768,75,864,85.3C960,96,1056,160,1152,197.3C1248,235,1344,245,1392,250.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        <div class="container">
+          <div>
+            <ul>
+              <li class="circle"><a href="https://github.com/kelecsenyi" target="_blank"><img src="pics/github@3x.png" alt="Kelecsényi Balázs Github Link"></a></li>
+              <li class="circle"><a href="https://www.linkedin.com/in/bal%C3%A1zs-kelecs%C3%A9nyi-16746a168/" target="_blank"><img src="pics/linkedin@3x.png" alt="Kelecsényi Balázs LinkedIn Link"></a></li>
+            </ul> 
+            <span><a href="impresszum.html">Impresszum </a></span>
+            <span><a href="adatvedelem.html"> Adatvédelmi nyilatkozat</a></span>
+            <br>
+            <span> 2022 &copy; Minden jog fenntartva <spa id="year"></spa></span>
+            <br>
+            <a href="index.html"><img width="70px" height="70px" src="pics/logo.png" alt="Kelecsényi Balázs logo"></a>
+          </div>
+        </div>
+      </footer>  
     <script src="main.js"></script>    
   </body>
 </html>
