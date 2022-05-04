@@ -1,0 +1,196 @@
+@media (max-width: 800px){
+    .flex_row{
+        flex-flow: column-reverse;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 0vh;
+    }
+    .col .me{
+        max-width: 40vw;
+        height: auto;
+        border-radius: 100%;
+    }
+    .col h1{
+        margin-top: 10vh;
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .col p{
+        margin-bottom: 5vh;
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .col h2{
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .button{
+        font-size: 20px;
+        line-height: 30px; 
+        margin: 0 auto;
+    }
+    .container{
+        margin: 2rem auto;
+        text-align: center;
+    }
+    .row{
+        display: flex;
+        justify-content: center;
+    }
+    .title{
+        line-height: 25px;
+        margin-bottom: 8vh;
+        font-size: 32px;
+    }
+    .sub-title {
+        font-size: 25px;
+        line-height: 48px;
+        width: 50vw;
+        text-align: center;
+        margin: 1rem auto
+    }
+    .flex ul li meter {
+        width: 60vw;
+    }
+    .flex {
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        flex-flow: column;
+        gap: 10vw;
+    }
+    .flex_row-2 {
+        flex-flow: column;
+        align-items: center;
+        gap: 2vw;
+        background-color: rgba(162, 217, 255, .7);
+        border-radius: 2rem;
+        padding: 2rem 0;
+    }
+    .flex_row-2 .text {
+        align-self: center; 
+    }
+    .flex_row-2 .arrow{
+        display: none;
+    }
+    .mb-1{
+        margin-bottom: 20vh;
+    }
+    .container .center {
+        margin-top: 8vh;
+    }
+    #demos .container{
+        min-height: 80vh;
+    }
+    .text {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .flex ul li h4 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+/*========== ROTATE =========*/
+    .imgs{
+        height: 40vh;
+        width: 40vh;
+        border-radius: 100%;
+        position: relative;
+        text-align: center;
+    }
+    
+    .rotate {
+        height: 50%;
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        width: 10vh;
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .rotate div {
+        height: 5vh;
+        width: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 570px){
+    .col h1{
+        margin-top: 5vh;
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .col p{
+        margin-bottom: 5vh;
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .col h2{
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .button{
+        font-size: 20px;
+        line-height: 30px; 
+        margin: 0 auto;
+    }
+    .row{
+        display: flex;
+        justify-content: center;
+    }
+    .container.height-11{
+        min-height: 80vh;
+    }
+    .flex ul li meter {
+        width: 60vw;
+    }
+    .flex {
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        flex-flow: column;
+        gap: 10vw;
+    }
+    .flex_row-2 {
+        flex-flow: column;
+        align-items: center;
+        gap: 2vw;
+        background-color: rgba(162, 217, 255, .7);
+        border-radius: 2rem;
+        padding: 2rem 0;
+    }
+    .flex_row-2 .arrow{
+        display: none;
+    }
+    .mb-1{
+        margin-bottom: 20vh;
+    }
+}
+
+@media (max-width: 450px){
+    .photo {
+        min-width: 80vw;
+    }
+    .col h1 {
+        margin-top: 0vh;
+    }
+    .col {
+        padding: 0; 
+    }
+    .rotate {
+        height: 35%;
+        top: 35%;
+        width: 4vh;
+    }
+}
+
+@media (max-height:400px){
+    .col .me{
+        max-width: 60%;
+    }
+}

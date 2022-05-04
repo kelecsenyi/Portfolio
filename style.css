@@ -95,15 +95,15 @@ section{
 }
 
 .height-10{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .height-8{
-    height: 80vh;
+    min-height: 80vh;
 }
 
 .height-3{
-    height: 30vh;
+    min-height: 30vh;
 }
 
 svg{
@@ -134,7 +134,7 @@ svg{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    flex-flow: row wrap;
+    flex-flow: row;
     gap: 10vw;
 }
 
@@ -158,7 +158,7 @@ svg{
     font-size: 24px;
     line-height: 36px;
     text-align: center;
-    padding: 12px 25px;
+    padding: 12px 14px;
     color: var(--white);
     background: linear-gradient(92.25deg, var(--primaryfirst) 0%, var(--primarysecond) 100%);
     transition: all .4s linear;  
@@ -203,8 +203,6 @@ svg{
 }
 
 .col .me{
-    position: absolute;
-    top: 4vh;
     max-width: 100%;
     height: auto;
     border-radius: 100%;
@@ -295,3 +293,8 @@ footer span{
     margin: 0 1rem;
 }
 
+
+/*========== IMPRESSZUM ==========*/
+#impresszum .center ul li{
+    display: block;
+}
