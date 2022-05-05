@@ -16,6 +16,7 @@
     <!--Icon-->
     <link rel="stylesheet" href="FontAwesome/css/all.css">
     <!-- CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/rotate.css">
     <link rel="stylesheet" href="css/media.css">
@@ -78,7 +79,7 @@
           <h3 class="title">Magamról</h3>
           <p class="text">Kelecsényi Balázs, mérnökinformatikus vagyok. Kedvenc időtöltésem, hogy fejleszthetem magamat, illetve szeretek weboldalakat létrehozni. Tanulmányaim után önfejlesztés útján sajátítottam el frontend ismereteimet, de ezek mellett mindig nyitott vagyok az új ismeretek megszerzésére.</p>
           <div class="center">
-            <a class="button" href="#contact">Önéletrajz letöltése <i class="fa-solid fa-arrow-down"></i></a>
+            <a download="" class="button" href="pdf/Kelecsenyi-Balazs-CV.pdf">Önéletrajz letöltése <i class="fa-solid fa-arrow-down"></i></a>
           </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a2d9ff" fill-opacity="1" d="M0,288L40,288C80,288,160,288,240,256C320,224,400,160,480,149.3C560,139,640,181,720,218.7C800,256,880,288,960,272C1040,256,1120,192,1200,160C1280,128,1360,128,1400,128L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
@@ -131,61 +132,54 @@
         <div class="background">
           <img src="pics/portfolio-hatter.png" alt="">
         </div>
-          <div class="container height-8">
+          <div class="container height-10">
             <h2 class="title">Referenciák</h2>
-            <div class="row">
-              <div class="films">
-                <img class="backward" id="js-backward" src="pics/bal.svg" alt="pörgetés jobbra ikon">
-              <div class="demo">
-                <div class="photo">
-                  <img src="pics/project-one.JPG" alt="">
-                </div>
-                <div class="text">
-                  <h4>Project One</h4>
-                  <p>Egyedi design alapján megvalósított reszponzív weboldal.</p>
-                  <a class="button" target="_blank" href="https://kelecsenyi.github.io/Project-one/">Demo</a>
-                  <a class="button" target="_blank" href="https://github.com/kelecsenyi/Project-one">Github</a>
-                </div>
-              </div>
+            <div class="portfolio_container swiper-container">
+              <div class="swiper-wrapper">
 
-              <div class="demo">
-                <div class="photo">
-                  <img src="pics/project-one.JPG" alt="">
+                  <!--===== DEMO 1 =====-->
+                <div class="demo swiper-slide">
+                  <div class="photo">
+                    <img src="pics/project-one.JPG" alt="Project-one fénykép">
+                  </div>
+                  <div class="text">
+                    <h4>Conti-Trans</h4>
+                    <p>Egyedi design alapján megvalósított reszponzív weboldal.</p>
+                    <a class="button" target="_blank" href="https://kelecsenyi.github.io/Project-one/">Demo</a>
+                    <a class="button" target="_blank" href="https://github.com/kelecsenyi/Project-one">Github</a>
+                  </div>
                 </div>
-                <div class="text">
-                  <h4>Project One</h4>
-                  <p>Egyedi design alapján megvalósított reszponzív weboldal.</p>
-                  <a class="button" target="_blank" href="https://kelecsenyi.github.io/Project-one/">Demo</a>
-                  <a class="button" target="_blank" href="https://github.com/kelecsenyi/Project-one">Github</a>
-                </div>
-              </div>
 
-              <div class="demo">
-                <div class="photo">
-                  <img src="pics/project-one.JPG" alt="">
+                <!--===== DEMO 2 =====-->
+                <div class="demo swiper-slide">
+                  <div class="photo">
+                    <img src="pics/projecttwo.JPG" alt="Project-one fénykép">
+                  </div>
+                  <div class="text">
+                    <h4>Lilla illatszer</h4>
+                    <p>Gyakorlás képpen egy meglévő wordpress oldal lemásola wordpress használata nélkül.</p>
+                    <a class="button" target="_blank" href="https://kelecsenyi.github.io/Project-two">Demo</a>
+                    <a class="button" target="_blank" href="https://github.com/kelecsenyi/Project-two">Github</a>
+                  </div>
                 </div>
-                <div class="text">
-                  <h4>Project One</h4>
-                  <p>Egyedi design alapján megvalósított reszponzív weboldal.</p>
-                  <a class="button" target="_blank" href="https://kelecsenyi.github.io/Project-one/">Demo</a>
-                  <a class="button" target="_blank" href="https://github.com/kelecsenyi/Project-one">Github</a>
-                </div>
-              </div>
 
-              <div class="demo">
-                <div class="photo">
-                  <img src="pics/project-one.JPG" alt="">
+                <!--===== DEMO 3 =====-->
+                <div class="demo swiper-slide">
+                  <div class="photo">
+                    <img src="pics/project-three.JPG" alt="Project-three fénykép">
+                  </div>
+                  <div class="text">
+                    <h4>Netflix másolat</h4>
+                    <p>Gyakorlás képpen egy meglévő oldal lemásolása egy kihívás részeként.</p>
+                    <a class="button" target="_blank" href="https://kelecsenyi.github.io/Project-three">Demo</a>
+                    <a class="button" target="_blank" href="https://github.com/kelecsenyi/Project-three">Github</a>
+                  </div>
                 </div>
-                <div class="text">
-                  <h4>Project One</h4>
-                  <p>Egyedi design alapján megvalósított reszponzív weboldal.</p>
-                  <a class="button" target="_blank" href="https://kelecsenyi.github.io/Project-one/">Demo</a>
-                  <a class="button" target="_blank" href="https://github.com/kelecsenyi/Project-one">Github</a>
-                </div>
-              </div>
 
-              <img class="forward" id="js-backward" src="pics/jobb.svg" alt="pörgetés balra ikon">
               </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
       </section>
@@ -220,6 +214,7 @@
         </div>
       </div>
     </footer> 
-    <script src="main.js"></script>    
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>    
   </body>
 </html>

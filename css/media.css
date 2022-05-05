@@ -57,6 +57,18 @@
         font-size: 20px;
         line-height: 30px;
     }
+    #adatvedelem h2{
+        margin: 0 auto;
+    }
+    .swiper-button-prev{
+        left:0%;
+    }
+    .swiper-button-next{
+        right:0%;
+    }
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+        bottom: -5%;
+    }
 
 /*========== ROTATE =========*/
     .imgs{
@@ -138,6 +150,12 @@
         height: 35vh;
         width: 40vh;
     }
+    .swiper-button-prev{
+        display: none;
+    }
+    .swiper-button-next{
+        display: none;
+    }
 }
 
 @media (max-width: 350px){
@@ -150,6 +168,9 @@
         height: 30vh;
         width: 25vh;
     }
+    #adatvedelem h2{
+        word-break: break-all;
+        }
 }
 
 @media (max-height:500px){

@@ -136,14 +136,6 @@ svg{
     justify-content: center;
 }
 
-/*.flex_row-2{
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 3vw;
-}*/
-
 .flex{
     display: flex;
     align-items: flex-start;
@@ -162,7 +154,7 @@ svg{
 
 .text{
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 36px;
     margin-bottom: 1rem;
 }
@@ -253,6 +245,16 @@ meter::-webkit-meter-optimum-value {
     background: #004FC7;
 }
 
+/*===== firefox =====*/
+meter{
+    border: 1px solid #DDDDDD;
+    border-radius:5px;
+}
+meter::-moz-meter-bar {
+    background: #004FC7;
+    border-radius:5px;
+}
+
 /*========= FOURTH SECTION ==========*/
 .background{
     min-width: 100%;
@@ -263,57 +265,40 @@ meter::-webkit-meter-optimum-value {
     justify-content: center;
 }
 
-.photo{
+.demo{
+    text-align: center;
+}
+
+.demo .photo{
     max-width: 320px;
     padding: 1rem;
     height: auto;
+    margin: 0 auto;
+}
+.demo .photo img{
+    border-radius: 1rem;
 }
 
-.flex_row-2 .text{
-    align-self: flex-start;
-}
-
-.flex_row-2 .text p{
+.demo .text p{
     margin-bottom: 2rem;
 }
 
-
-/*SLIDER*/
-.container .row{
-    width: 100%;
-    margin-bottom: 1rem;
-    position: relative;
+.portfolio_container{
+    overflow: initial;
 }
 
-.container .row .films{
-    display: flex;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    padding: 1rem 1rem 1rem 0;
-    align-items: center;
-    scroll-behavior: smooth;
+
+/*===== SLIDER =====*/
+.swiper-button-prev{
+    left:10%;
+}
+.swiper-button-next{
+    right:10%;
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+    bottom: 30%;
 }
 
-.container .films::-webkit-scrollbar{
-    display: none;
-}
-
-.container .row .films .forward{
-    height: 5vh;
-    opacity: .9;
-    position: absolute;
-    right: 1%;
-    z-index: 1;
-    color: white;
-}
-
-.container .row .films .backward{
-    height: 5vh;
-    opacity: .9;
-    position: absolute;
-    left: 1%;
-    z-index: 1;
-}
 
 /*========= FIFTH SECTION ==========*/
 .container .text a{
