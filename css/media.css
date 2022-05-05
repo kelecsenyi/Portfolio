@@ -187,6 +187,9 @@
         top: 35%;
         width: 4vh;
     }
+    .container.bubble {
+        background: url(../pics/hatter.png) no-repeat center -280px;
+    }
 }
 
 @media (max-height:400px){
