@@ -136,13 +136,13 @@ svg{
     justify-content: center;
 }
 
-.flex_row-2{
+/*.flex_row-2{
     display: flex;
     flex-flow: row;
     align-items: center;
     justify-content: space-between;
     gap: 3vw;
-}
+}*/
 
 .flex{
     display: flex;
@@ -154,10 +154,10 @@ svg{
 
 .title{
     font-weight: 500;
-    font-size: 36px;
-    line-height: 54px;
+    font-size: clamp(1.25rem, 2.25rem, 2.5rem);
     text-align: center;
     margin-bottom: 12vh;
+    word-break: break-all;
 }
 
 .text{
@@ -193,31 +193,27 @@ svg{
 }
 
 .col h1{
-    margin-top: 12vh;
+    margin-top: clamp(2vh, 6vh , 12vh);
     font-weight: 500;
-    font-size: 50px;
-    line-height: 70px;
+    font-size: clamp(2rem, 1rem + 10vw,3rem);
 }
 
 .col h2{
     font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: clamp(1.4rem, 1.5rem , 1.6rem);
     background: linear-gradient(90.83deg, var(--primaryfirst) 0%, var(--primarysecond) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
 }
 
 .col p{
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 100px;
+    font-size: clamp(1.1rem, 1.2rem , 1.25rem);
+    margin-top: clamp(2vh, 3vh , 8vh);
+    margin-bottom: clamp(5vh, 13vh , 18vh);
 }
 
 .col .me{
-    max-width: 100%;
+    max-width: clamp(20vw, 43vw , 100vw);
     height: auto;
     border-radius: 100%;
 }
@@ -232,11 +228,10 @@ svg{
 .sub-title{
     background: linear-gradient(90.83deg, var(--primaryfirst) 0%, var(--primarysecond) 100%);
     font-weight: 400;
-    font-size: 32px;
-    line-height: 48px;
-    width: 360px;
+    font-size: clamp(1rem, 1.8rem , 2rem);
     text-align: center;
     margin-bottom: 3vh;
+    padding: 5px;
 }
 
 .flex ul li{
@@ -269,7 +264,8 @@ meter::-webkit-meter-optimum-value {
 }
 
 .photo{
-    width: 320px;
+    max-width: 320px;
+    padding: 1rem;
     height: auto;
 }
 
@@ -281,9 +277,51 @@ meter::-webkit-meter-optimum-value {
     margin-bottom: 2rem;
 }
 
+
+/*SLIDER*/
+.container .row{
+    width: 100%;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.container .row .films{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 1rem 1rem 1rem 0;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+.container .films::-webkit-scrollbar{
+    display: none;
+}
+
+.container .row .films .forward{
+    height: 5vh;
+    opacity: .9;
+    position: absolute;
+    right: 1%;
+    z-index: 1;
+    color: white;
+}
+
+.container .row .films .backward{
+    height: 5vh;
+    opacity: .9;
+    position: absolute;
+    left: 1%;
+    z-index: 1;
+}
+
 /*========= FIFTH SECTION ==========*/
 .container .text a{
     color: #004FC7;
+}
+
+.wrap{
+    word-break: break-all;
 }
 
 
