@@ -2,7 +2,7 @@
 Theme Name: Kelecsényi Balázs personal website
 Theme URI: --
 Description: Portfolio
-Version: 2.0
+Version: 2.1
 Author: Kelecsényi Balázs
 Author URI: https://kelecsenyi.github.io/Portfolio/
 */
@@ -61,31 +61,31 @@ nav{
 }
 
 .logo{
-    width: 70px;
-    height: 70px;
-    margin-left: 10px;
+    width: 4.375rem;
+    height: 4.375rem;
+    margin-left: 0.625rem;
 }
 
 .circle{
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
     text-align: center;
-    margin-right: 10px;
+    margin-right: 0.625rem;
     position: relative;
 }
 
 .circle.arrow{
     background: #C4C4C4;
-    font-size: 30px;
+    font-size: 1.875rem;
     cursor: pointer;
 }
 
 .circle i{
     color: var(--black);
     position: absolute;
-    left: 13.5px;
-    top: 10px;
+    left: 0.84375rem;
+    top:  0.625rem;
 }
 
 
@@ -112,7 +112,7 @@ svg{
 
 .container{
     max-width: 1080px;
-    padding: 0 10px;
+    padding: 0 0.625rem;
     margin: 0 auto;
 }
 
@@ -140,8 +140,8 @@ svg{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    flex-flow: row;
-    gap: 10vw;
+    flex-flow: row wrap;
+    gap: 5vw;
 }
 
 .title{
@@ -154,17 +154,17 @@ svg{
 
 .text{
     font-weight: 400;
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 1.25rem;
+    line-height: 2rem;
     margin-bottom: 1rem;
 }
 
 .button{
     font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     text-align: center;
-    padding: 12px 14px;
+    padding: 0.75rem 0.875rem;
     color: var(--white);
     background: linear-gradient(92.25deg, var(--primaryfirst) 0%, var(--primarysecond) 100%);
     transition: all .4s linear;  
@@ -181,7 +181,7 @@ svg{
 }
 
 .col{
-    padding: 0 10px 0 0;
+    padding: 0 0.625rem 0 0;
 }
 
 .col h1{
@@ -223,7 +223,7 @@ svg{
     font-size: clamp(1rem, 1.8rem , 2rem);
     text-align: center;
     margin-bottom: 3vh;
-    padding: 5px;
+    padding: 0.3rem;
 }
 
 .flex ul li{
@@ -233,12 +233,16 @@ svg{
 
 .flex ul li h4{
     font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
 }
 
 .flex ul li meter{
     width: 328px; 
+}
+
+.mb-1{
+    margin-bottom: 2rem;
 }
 
 meter::-webkit-meter-optimum-value {
@@ -248,11 +252,11 @@ meter::-webkit-meter-optimum-value {
 /*===== firefox =====*/
 meter{
     border: 1px solid #DDDDDD;
-    border-radius:5px;
+    border-radius:0.3rem;
 }
 meter::-moz-meter-bar {
     background: #004FC7;
-    border-radius:5px;
+    border-radius:0.3rem;
 }
 
 /*========= FOURTH SECTION ==========*/
